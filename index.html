@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Directive Practice 1</title>
+  <link rel="stylesheet" href="">
+</head>
+
+<body ng-app="directivePractice" ng-controller="mainCtrl">
+  {{test}}
+  <ul>
+    <lesson-hider lesson="lesson" day-alert="announceDay(lesson, day)" ng-repeat="lesson in lessons"></lesson-hider>
+  </ul>
+  <!--scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="lessonCtrl.js"></script>
+  <script src="lessonService.js"></script>
+  <script src="lessonHider.js"></script>
+
+</body>
+
+
+
+</html>
